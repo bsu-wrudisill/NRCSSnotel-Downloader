@@ -1,7 +1,7 @@
 # NRCSSnotel-Downloader
 This code will download NRCS SNOTEL (https://www.nrcs.usda.gov/wps/portal/wcc/home/) data from the web. The user provides the US State. All of the data will be saved in a sql data base file. I reccomend downloading a sql browser to look at the file once it's downloaded. https://sqlitebrowser.org/
 
-The dependencies are fairly standard -- pandas being among them. You will need to also install the sqlalchemy (https://www.sqlalchemy.org/) dependency in order for pandas to read/write CSV files. 
+The dependencies are fairly standard -- pandas being among them. You will need to also install the sqlalchemy (https://www.sqlalchemy.org/) dependency in order for pandas to read/write sql files. 
 
 I think this is a fairly convenient way to store the data, rather than bunch of separate CSV files or a netcdf file. Actually doing analysis in a SQL framework is not really the point of this script (nor do I really know sql)... After creating the .db file, I always do analysis in python/pandas. I provide a sample .py script for reading a table from the database file as a pandas dataframe. 
 
